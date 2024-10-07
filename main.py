@@ -130,7 +130,7 @@ def show_menu(call):
             with open(image_path, 'rb') as img:
                 bot.send_photo(call.message.chat.id, img)
         except FileNotFoundError:
-            bot.send_message(call.message.chat.id, "⚠ Image not found.")
+            bot.send_message(call.message.chat.id, "😋 yumm yumm")
 
     else:
         bot.edit_message_text(
